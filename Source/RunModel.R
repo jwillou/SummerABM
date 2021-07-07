@@ -25,6 +25,6 @@ RunModel = function(replicates, r, directory){
   for(y in 1:timeperiod){
     dead = sample(seq(1,nrow(pop),1),1,replace=F) #take a sample of the sequence 1-all the rows in matrix "pop", take out 1 individual and do not replace it
     pop = pop[-dead,] #now re-create "pop" with this change
-  }
- #add write.table eventually
+    }
+  write.table(pop, paste(directory, "/output/testpop.txt", sep=""), sep="/t", col.names=F, row.names=F)
 }

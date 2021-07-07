@@ -2,6 +2,10 @@
 #this file contains all of the parameters and is the main directory for the flow of the simulation
 
 setwd("C:/Users/HP/Box/New Computer/Auburn/Data/SummerABM")
+directory = getwd()
+outdir = paste(directory,"/output/", sep="")
+source(paste(directory, "/source/FunctionSourcer.R", sep =''))
+
 #example IBM code
 
 #set parameters > initialize pop > age > reproduce
