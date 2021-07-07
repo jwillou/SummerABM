@@ -28,3 +28,5 @@ RunModel = function(replicates, r, directory){
     }
   write.table(pop, paste(directory, "/output/testpop.txt", sep=""), sep="/t", col.names=F, row.names=F)
 }
+
+
