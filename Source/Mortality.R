@@ -1,9 +1,14 @@
 #Age-related death
 
-Mortality = function(pop, maxage){
-  pop = pop[-which(pop[,4] > maxage),]
+Mortality = function(pop, age){
+  pop = pop[-which(pop[,4] >= maxage),]
   return(pop)
 }
+
+#I have tried a few things but they dont seem to work. line 3 has tried age and maxage; age seems to be the correct one
+# I have tried setting equal or greater than maxage, which doesnt seem to work
+# right now, matrix goes empty when trying to run Mortality(pop)
+
 
 ##Mortality = function(pop, age){
 ##  mort = NULL #create column to flag for almost dead indv
