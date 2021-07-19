@@ -27,4 +27,3 @@ colnames(replicates) = c("maxage", "timeperiod", "broodsize", "k", "sexratio", "
 for(r in 1:nrow(replicates)){
   RunModel(replicates, r, directory)
 }
-
