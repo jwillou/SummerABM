@@ -1,6 +1,6 @@
 #Age-related death
 
-Mortality = function(pop){
+Mortality = function(pop, maxage){
   pop1 = pop[-which(pop[,4] >= maxage),]
   pop = pop1
   return(pop)
